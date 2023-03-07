@@ -66,7 +66,6 @@ const Piratecard = () => {
 
 
   return (
-
     <main>
       <h1>Pokemon Card, Holo Effect</h1>
       <section class="cards">
