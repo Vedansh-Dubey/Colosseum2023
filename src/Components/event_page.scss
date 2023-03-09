@@ -19,9 +19,6 @@ $button-text-color: #fff;
   }
  }
 }
-*{
-  overflow: hidden;
-}
 
 p{
   font-weight: 400;
@@ -73,6 +70,10 @@ p{
 *, *:before, *:after {
   box-sizing: border-box; 
 }
+main{
+  overflow: hidden;
+}
+
 // Body
 body {
   margin: 0;
@@ -155,6 +156,7 @@ body {
   
   h3.mast__title.js-spanize.subtitle{
     font-size: 1.5em;
+    padding: 2vh;
   }
   div.textbox{
     position: relative;
