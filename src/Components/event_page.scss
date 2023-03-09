@@ -2,6 +2,9 @@
 $font-mono: "Cutive Mono", monospace;
 // Config: Ease
 $ease-cb: cubic-bezier(.19,1,.22,1);
+$fuschia: #5cf9ee;
+$button-bg: $fuschia;
+$button-text-color: #fff;
 
 //--------------------------
 //  nth-trans-delay()
@@ -20,8 +23,9 @@ $ease-cb: cubic-bezier(.19,1,.22,1);
 p{
   font-weight: 400;
     font-size: 18px;
-    padding: 1em;
+    padding: 0;
     background: rgba(0, 0, 0, 0);
+    
 }
 
 //--------------------------
@@ -74,10 +78,10 @@ body {
   line-height: 1.5;
   font-weight: 400;
   font-style: normal;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; 
+  // -ms-text-size-adjust: 100%;
+  // -webkit-text-size-adjust: 100%;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale; 
   text-rendering: optimizeLegibility;
 }
 
@@ -109,15 +113,21 @@ body {
     background-size: cover;
     background-position: 50%;
   }
+  .mast > header{
+    position: relative;
+    top: 5vh;
+  }
   
   &__header{
     padding: 5%;
+    position: fixed;
+    top: -5vh;
   }
   &__title{
     font-family: $font-mono;
     font-size: 2em;
     font-weight: 400;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
   }
   // Letter animation
@@ -128,7 +138,7 @@ body {
   //Letter animation
   &__text{
     font-family: $font-mono;
-    font-size: 1em;
+    font-size: 1.2em;
     margin: 0 0 0.5em;
     line-height: 1.5;
     white-space: pre;
@@ -139,6 +149,17 @@ body {
   &__text span{
     animation: letter-glow 0.7s 0s ease both;
     @include nth-ani-delay(800, 0.009s);
+  }
+  
+  h3.mast__title.js-spanize.subtitle{
+    font-size: 1.5em;
+  }
+  div.textbox{
+    position: relative;
+    top: 1.5vh;
+    height: 35vh;
+    overflow-x: auto;
+    overflow-y: scroll;
   }
 }
 

@@ -1,30 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@800&family=Pirata+One&display=swap');
+
 :root {
   --color1: rgb(0, 231, 255);
   --color2: rgb(255, 0, 231);
   --firstevent1: #fac;
   --firstevent2: #ddccaa;
-  --firsteventfront: url(https://wallpaperaccess.com/full/3037905.jpg);
+  --firsteventfront: url(https://i.ibb.co/6Jt9LMH/valo.png);
   --secondevent1: #54a29e;
   --secondevent2: #a79d66;
-  --secondeventfront: url(https://assets.codepen.io/13471/pikachu-gx.webp);
+  --secondeventfront: url(https://i.ibb.co/6Jt9LMH/valo.png);
   --thirdevent1: #efb2fb;
   --thirdevent2: #acc6f8;
-  --thirdeventfront: url(https://assets.codepen.io/13471/eevee-gx.webp);
+  --thirdeventfront: url(https://i.ibb.co/8PLWMyt/Discussion-3.png);
   --firstbuffer1: #efb2fb;
   --firstbuffer2: #acc6f8;
-  --firstbufferfront: url(https://assets.codepen.io/13471/mewtwo-gx.webp);
+  --firstbufferfront: url(https://i.ibb.co/ncWBrxD/Whats-App-Image-2023-03-06-at-12-26-04.jpg);
   --fourthevent1: #fac;
   --fourthevent2: #ddccaa;
   --fourtheventfront: url(https://wallpaperaccess.com/full/3037905.jpg);
   --fifthevent1: #54a29e;
   --fifthevent2: #a79d66;
-  --fiftheventfront: url(https://assets.codepen.io/13471/pikachu-gx.webp);
+  --fiftheventfront: url(https://i.ibb.co/ncWBrxD/Whats-App-Image-2023-03-06-at-12-26-04.jpg);
   --sixthevent1: #efb2fb;
   --sixthevent2: #acc6f8;
   --sixtheventfront: url(https://i.ibb.co/BnP3rkZ/pirate-css.webp);
   --secondbuffer1: #efb2fb;
   --secondbuffer2: #acc6f8;
-  --secondbufferfront: url(https://assets.codepen.io/13471/mewtwo-gx.webp);
+  --secondbufferfront: url(https://i.ibb.co/ncWBrxD/Whats-App-Image-2023-03-06-at-12-26-04.jpg);
 }
 
 .card {
@@ -38,7 +41,7 @@
     // max-width: 500px;
     // max-height: 700px;
     width: clamp(12.9vw, 61vh, 18vw);
-    height: clamp(18vw, 85vh, 25.2vw);
+    height: clamp(18vw, 75vh, 25.2vw);
   }
 
   position: relative;
@@ -489,4 +492,18 @@ html,
 body,
 main {
   min-height: 100%;
+}
+
+.Events{
+  font-family: 'Cinzel', serif;
+  height: 15vw;
+  justify-items: center;
+
+  .heading{
+    color: wheat;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    font-size: 10vw;
+  }
 }

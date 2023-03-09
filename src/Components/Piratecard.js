@@ -67,7 +67,11 @@ const Piratecard = () => {
 
   return (
     <main>
-      <h1>Pokemon Card, Holo Effect</h1>
+      <div className="Events">
+        <h2 className="heading">
+          Events
+        </h2>
+      </div>
       <section class="cards">
         <div class="card firstevent animated"></div>
         <div class="card secondevent animated"></div>
