@@ -86,6 +86,18 @@ function Event_page({ event_name, description, rules, registration }) {
     setShouldRunEffect(true);
   };
 
+  const handleClickDescription = () => {
+    setStateValue(description);
+    setSubtitle("description")
+    setShouldRunEffect(true);
+  };
+
+  const handleClickRegister = () => {
+    setStateValue(rules);
+    setSubtitle("register")
+    setShouldRunEffect(true);
+  };
+
   return (
     <main>
       <section className="mast">
@@ -99,10 +111,31 @@ function Event_page({ event_name, description, rules, registration }) {
             {stateValue} 
           </p>
           </div>
+
         </header>
       </section>
-      
-      <button onClick={handleClickRules}>Rules</button>
+      <div className='bottom'>     
+          <div className="svg-wrapper">
+  <a className='button' onClick={handleClickDescription}>About</a>
+  <svg xmlns="http://www.w3.org/2000/svg">
+  <rect id="shape" />
+  </svg>
+</div>
+{/* Next button */}
+<div className="svg-wrapper">
+  <a className='button' onClick={handleClickRules}>Rules</a>
+  <svg xmlns="http://www.w3.org/2000/svg">
+  <rect id="shape" />
+  </svg>
+</div>
+{/* Next button */}
+<div className="svg-wrapper">
+  <a className='button' onClick={handleClickRegister}>Register</a>
+  <svg xmlns="http://www.w3.org/2000/svg">
+  <rect id="shape" />
+  </svg>
+</div>
+</div>
 
     </main>
     

@@ -19,6 +19,9 @@ $button-text-color: #fff;
   }
  }
 }
+*{
+  overflow: hidden;
+}
 
 p{
   font-weight: 400;
@@ -86,7 +89,6 @@ body {
 }
 
 .sep{
-  border: 0;
   width: 3em;
   height: 1px;
   margin: 1em auto;
@@ -115,7 +117,7 @@ body {
   }
   .mast > header{
     position: relative;
-    top: 5vh;
+    top: -10vh;
   }
   
   &__header{
@@ -148,7 +150,7 @@ body {
   
   &__text span{
     animation: letter-glow 0.7s 0s ease both;
-    @include nth-ani-delay(800, 0.009s);
+    @include nth-ani-delay(800, 0.004s);
   }
   
   h3.mast__title.js-spanize.subtitle{
@@ -170,4 +172,102 @@ body {
   66%  { opacity: 1; text-shadow: 0px 0px 20px rgba(255,255,255,0.9) }
   77%   { opacity: 1;  }
   100% { opacity:0.7; text-shadow: 0px 0px 20px rgba(255,255,255,0.0)}
+}
+
+/*   
+    Spot is the span on the inside of the href that
+    fills the parent and makes the hover and link work
+    for the entire div
+*/
+.bottom{
+  position: relative;
+  bottom: 8vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+a.button{
+  color: white;
+  font-size: 1.1em;
+text-decoration: none;
+}
+
+.spot {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/*
+    This is the outer svg wrapper that the SVG itself will 
+    fill. Multiple svg-wrapper classes can be put side by side.
+*/
+
+.svg-wrapper {
+  margin-top: 0;
+  position: relative;
+  width: 22vw;
+  height: 40px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px
+} 
+
+
+#shape {
+  width: 22vw;
+  height: 40px;
+  stroke-width: 6px;
+  fill: transparent;
+  stroke: #009FFD;
+  stroke-dasharray: 1 4;
+  stroke-dashoffset: 0;
+  transition: 1s all ease;
+}
+
+.svg-wrapper:hover #shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke: #06D6A0;
+}
+
+.svg-wrapper {
+  padding-inline-start: 8vw;
+  width: 22vw;
+  height: 40px;
+  position: relative; /* set position to relative to contain absolute elements */
+  display: inline-block; /* make wrapper display inline with its content */
+}
+
+.button {
+  width: 22vw;
+  height: 40px;
+  position: absolute; /* set button to absolute position */
+  top: 0; /* position button at the top of the wrapper */
+  left: 0; /* position button at the left of the wrapper */
+  z-index: 2; /* set z-index higher than other elements */
+  padding: 9px 5px; /* add padding to button */
+  color: #fff; /* set text color for button */
+  text-decoration: none; /* remove underline from button text */
+}
+
+svg {
+  width: 22vw;
+  height: 40px;
+  position: absolute; /* set svg to absolute position */
+  top: 0; /* position svg at the top of the wrapper */
+  left: 0; /* position svg at the left of the wrapper */
+  z-index: 1; /* set z-index lower than button */
+}
+
+rect {
+  width: 22vw;
+  height: 40px;
+  fill: transparent; /* make rect transparent to let svg background color show */
+  stroke: #0077c0; /* set border color for rect */
+  stroke-width: 2; /* set border width for rect */
 }
