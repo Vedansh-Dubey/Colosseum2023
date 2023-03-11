@@ -9,7 +9,9 @@
 <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    
 </head>
+
 <body>
     <header>
         <h2><a href="#">STC</a></h2>
@@ -27,8 +29,66 @@
             <h1 class="pirate-text">Colosseum 13.0</h1>
             
         </div>
-        <a href="#" class="boxBtn">Explore</a>
+        <!-- <a href="#" class="boxBtn">Explore</a> -->
+
+    <!-- Timer -->
+    <div class="countdown-container">
+        <div>
+          <p id="days" class="big-text">0</p>
+          <span>Days</span>
+        </div>
+        <div>
+          <p id="hours" class="big-text">0</p>
+          <span>Hours</span>
+        </div>
+        <div>
+          <p id="min" class="big-text">0</p>
+          <span>Min</span>
+        </div>
+        <div>
+          <p id="sec" class="big-text">0</p>
+          <span>Sec</span>
+        </div>
+      </div>    
     </section>
-    
+    <script>
+        function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  // let daysItem = document.querySelector("#days");
+  //let hoursItem = document.querySelector("#hours");
+  //let minItem = document.querySelector("#min");
+  //let secItem = document.querySelector("#sec"); -->
+  let countDown = () => {
+  let futureDate = new Date("4 4 2023");
+  let currentDate = new Date();
+  let myDate = futureDate - currentDate;
+  console.log(myDate);
+
+  let dayss = Math.floor(myDate / 1000 / 60 / 60 / 24);
+
+  let hourss = Math.floor(myDate / 1000 / 60 / 60) % 24;
+
+  let mins = Math.floor(myDate / 1000 / 60) % 60;
+
+  let secs = Math.floor(myDate / 1000) % 60;
+
+  document.getElementById('days').innerHTML = dayss;
+  document.getElementById('hours').innerHTML = hourss;
+  document.getElementById('min').innerHTML = mins;
+  document.getElementById('sec').innerHTML = secs;
+  }
+
+countDown();
+
+setInterval(countDown, 1000);
+    </script>
+<script src="myscripts.js"></script>
 </body>
+
 </html>
