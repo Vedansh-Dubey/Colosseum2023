@@ -151,7 +151,7 @@ body {
   
   &__text span{
     animation: letter-glow 0.7s 0s ease both;
-    @include nth-ani-delay(800, 0.004s);
+    @include nth-ani-delay(800, 0.01s);
   }
   
   h3.mast__title.js-spanize.subtitle{

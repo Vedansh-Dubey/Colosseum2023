@@ -1,11 +1,15 @@
 import React from 'react';
-import Activities from './Pages/Activities'
 import './App.css'
+import Navbar from './Components/Navbar';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Homepage from "./Pages/homepage"
+
 function App() {
   return (
-    <div className='page' style={{ textAlign: 'center'}}>
-      <Activities/>
-    </div>
+    <Router>
+        <Navbar/>
+        <Homepage/>
+    </Router>
   );
 }
 
