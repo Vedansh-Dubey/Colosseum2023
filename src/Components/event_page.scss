@@ -69,23 +69,23 @@ p{
 //Setups
 *, *:before, *:after {
   box-sizing: border-box; 
-}
-main{
-  overflow: hidden;
+  
 }
 
-// Body
+
+Body
 body {
+  
   margin: 0;
   width: 100%;
   font-family: $font-mono;
   line-height: 1.5;
   font-weight: 400;
   font-style: normal;
-  // -ms-text-size-adjust: 100%;
-  // -webkit-text-size-adjust: 100%;
-  // -webkit-font-smoothing: antialiased;
-  // -moz-osx-font-smoothing: grayscale; 
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
   text-rendering: optimizeLegibility;
 }
 
@@ -110,7 +110,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     margin: 0;
     padding: 0;
     background-size: cover;
@@ -166,6 +166,31 @@ body {
     overflow-y: scroll;
   }
 }
+div.textbox::-webkit-scrollbar {
+  width: 8px;
+}
+
+div.textbox::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+div.textbox::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+div.textbox::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 
 // Letter Glow
@@ -182,6 +207,7 @@ body {
     for the entire div
 */
 .bottom{
+  
   position: relative;
   bottom: 10vh;
   display: flex;
@@ -190,6 +216,7 @@ body {
 }
 
 a.button{
+  overflow: hidden;
   color: white;
   font-size: 1.1em;
 text-decoration: none;

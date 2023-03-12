@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import "./EventCards.scss";
 import $ from 'jquery';
+import{Link} from 'react-router-dom'
+
 const EventCards = () => {
 
   useEffect(() => {
@@ -69,22 +71,22 @@ const EventCards = () => {
     <main>
       <div className="Events">
         <h2 className="heading">
-          Events
+          Adventures
         </h2>
       </div>
-      <section class="cards">
-        <div class="card firstevent animated"></div>
-        <div class="card secondevent animated"></div>
-        <div class="card thirdevent animated"></div>
-        <div class="card firstbuffer animated"></div>
+      <section className="cards">
+        <Link to="/events/1" className="card firstevent animated"></Link>
+        <Link to="/events/2" className="card secondevent animated"></Link>
+        <Link to="/events/3" className="card thirdevent animated"></Link>
+        <div className="card firstbuffer animated"></div>
       </section>
-      <section class="cards">
-        <div class="card fourthevent animated"></div>
-        <div class="card fifthevent animated"></div>
-        <div class="card sixthevent animated"></div>
-        <div class="card secondbuffer animated"></div>
+      <section className="cards">
+        <Link to="/events/4" className="card fourthevent animated"></Link>
+        <Link to="/events/5" className="card fifthevent animated"></Link>
+        <Link to="/events/6" className="card sixthevent animated"></Link>
+        <div className="card secondbuffer animated"></div>
       </section>
-      <style class="hover"></style>
+      <style className="hover"></style>
     </main>
   );
 };

@@ -7,7 +7,7 @@
 	--textColor: wheat;
 }
 
-header {
+.navbar {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -15,15 +15,28 @@ header {
 	padding: 0 2rem;
 	background-color: var(--mainColor);
 	color: var(--textColor);
+	
 }
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999; /* set a high z-index to make sure the navbar appears on top of other elements */
+	/* add your other styles here */
+  }
 
-nav a {
+.Links {
 	margin: 0 1rem;
 	color: var(--textColor);
 	text-decoration: none;
 }
 
-nav a:hover {
+.Links:hover {
+	color: var(--secondaryColor);
+}
+
+.active{
 	color: var(--secondaryColor);
 }
 
@@ -37,27 +50,35 @@ header .nav-btn {
 	opacity: 0;
 	font-size: 1.8rem;
   text-align: center;
+  position: relative;
+  right: -35px;
+  top: 4px
 }
 
 header div,
 nav {
   
-	display: flex;
+display: flex;
 	align-items: center;
   position: absolute;
   right:0px;
   font-size: 1.25rem;
 }
 
+.header h3{
+	padding-left: 10px;
+}
+
 @media only screen and (max-width: 1024px) {
 	header .nav-btn {
 		visibility: visible;
 		opacity: 1;
-    padding-top: 3px;
+		position: relative;
+		
 	}
 
 	header nav {
-    z-index: 9;
+		z-index: 9;
 		position: fixed;
 		top: -100vh;
 		left: 0;
@@ -69,26 +90,30 @@ nav {
 		justify-content: center;
 		gap: 1.5rem;
 		background-color: var(--mainColor);
-		transition: 0.8s;
-		-webkit-transition: 0.8s;
-		-moz-transition: 0.8s;
-		-ms-transition: 0.8s;
-		-o-transition: 0.8s;
+		transition: 0.5s;
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
+		-ms-transition: 0.5s;
+		-o-transition: 0.5s;
 }
 
 	header .responsive_nav {
 		transform: translateY(100vh);
 	}
 
-	nav .nav-close-btn {
-		position: absolute;
-		top: 1rem;
-		right: 1.5rem;
-    padding: 0;
-    font-size:2.25rem;
+	.nav-btn svg{
+		position: relative;
 	}
 
-	nav a {
+	nav .nav-close-btn {
+		position: absolute;
+    top: 15px;
+    right: 10px;
+    padding-top: 0px;
+    font-size: 1rem;
+	}
+
+	.Links {
 		font-size: 8vw;;
 	}
 }

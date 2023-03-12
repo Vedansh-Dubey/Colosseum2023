@@ -48,7 +48,7 @@
   overflow: hidden;
   margin: 20px;
   overflow: hidden;
-  z-index: 10;
+
   touch-action: none;
 
   border-radius: 5% / 3.5%;
@@ -414,14 +414,11 @@ body {
   font-family: "Heebo", sans-serif;
   text-align: center;
 }
-h1 {
-  display: block;
-  margin: 30px 0;
-}
-p {
-  margin-top: 5px;
-  font-weight: 200;
-}
+
+// p {
+//   margin-top: 5px;
+//   font-weight: 200;
+// }
 #app {
   position: relative;
 }
@@ -434,6 +431,7 @@ p {
   justify-content: space-evenly;
   perspective: 2000px;
   position: relative;
+  top: 12vh;
   z-index: 1;
   transform: translate3d(0.1px, 0.1px, 0.1px);
 }
@@ -505,5 +503,10 @@ main {
     display: flex;
     justify-content: center;
     font-size: 10vw;
+    padding-bottom: 10px ;
+    padding-top: 7px;
+    position: absolute;
+    top: 12vh;
+    left: 15vw;
   }
 }
