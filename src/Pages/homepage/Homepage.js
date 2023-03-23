@@ -33,7 +33,7 @@ function Homepage() {
         <source src={ship} type="video/mp4" />
       </video>
       <div className='box'>
-      <h1 className="homepage-heading">Colloseum 13.0</h1>
+      <h1 className="homepage-heading">Colosseum 13.0</h1>
       </div>
       <div class="countdown-container">
         <div>

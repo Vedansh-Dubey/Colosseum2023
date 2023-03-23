@@ -1,9 +1,10 @@
 import React from 'react';
 import EventCards from "../../Components/EventCards"
 import EventPage from '../../Components/event_page';
+import "./style.css"
 const Events = () => {
   return (
-    <div>
+    <div className='Events_main'>
       {/* <EventPage 
       event_name="Techno Hunt" 
       description="Velit adipisicing in duis eu ex labore Lorem eu ipsum culpa minim aliquip incididunt. Amet cupidatat eu aute nulla ipsum quis. Enim nisi ea tempor do fugiat ut in velit laborum id commodo laborum ut ea. Quis deserunt nostrud esse excepteur. Aliquip elit Lorem aliqua in voluptate pariatur irure dolor ullamco et. Duis sunt elit dolore culpa reprehenderit officia mollit. Sint occaecat duis incididunt irure deserunt" 

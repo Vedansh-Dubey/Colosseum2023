@@ -66,26 +66,43 @@ const EventCards = () => {
   }, []);
 
 
+  const styles = {
+    overflow: 'hidden',
+  };
+
+  const styles2 = {
+    overflow: 'hidde',
+    position:'relative',
+    top:'10vh',
+  };
+
+  const styles3 = {
+    paddingBlockStart: '65px'
+  };
 
   return (
-    <main>
+    <main style={styles}>
       <div className="Events">
         <h2 className="heading">
           Adventures
         </h2>
       </div>
+      <div className="Section" style={styles2}>
       <section className="cards">
-        <Link to="/events/1" className="card firstevent animated"></Link>
+        <Link to="/events/1" className="card firstevent animated" data-text="first event"></Link>
         <Link to="/events/2" className="card secondevent animated"></Link>
         <Link to="/events/3" className="card thirdevent animated"></Link>
         <div className="card firstbuffer animated"></div>
       </section>
+      </div>
+      <div className="Section" style={styles3}>
       <section className="cards">
         <Link to="/events/4" className="card fourthevent animated"></Link>
         <Link to="/events/5" className="card fifthevent animated"></Link>
         <Link to="/events/6" className="card sixthevent animated"></Link>
         <div className="card secondbuffer animated"></div>
       </section>
+      </div>
       <style className="hover"></style>
     </main>
   );

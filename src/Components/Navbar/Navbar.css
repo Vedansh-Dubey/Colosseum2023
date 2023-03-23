@@ -13,7 +13,7 @@
 	justify-content: space-between;
 	height: 10vh;
 	padding: 0 2rem;
-	background-color: var(--mainColor);
+	background-color: rgba(0, 0, 0, 0.349);
 	color: var(--textColor);
 	
 }

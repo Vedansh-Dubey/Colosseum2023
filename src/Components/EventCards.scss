@@ -45,10 +45,8 @@
   }
 
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   margin: 20px;
-  overflow: hidden;
-
   touch-action: none;
 
   border-radius: 5% / 3.5%;
@@ -225,6 +223,8 @@
     animation: holoSparkle 12s ease 0s 1;
   }
 }
+
+
 
 @keyframes holoSparkle {
   0%,
@@ -408,6 +408,7 @@ body {
   z-index: 1;
   transform: translate3d(0, 0, 0.1px);
 }
+
 body {
   color: white;
   background-color: rgb(18, 17, 17);
@@ -430,12 +431,9 @@ body {
   align-items: center;
   justify-content: space-evenly;
   perspective: 2000px;
-  position: relative;
-  top: 12vh;
   z-index: 1;
   transform: translate3d(0.1px, 0.1px, 0.1px);
 }
-
 
 @media screen and (min-width: 600px) {
   .cards {
@@ -482,6 +480,7 @@ p.bottom {
   right: 0;
   margin-bottom: 0;
 }
+
 p a {
   color: cyan;
 }
@@ -496,6 +495,8 @@ main {
   font-family: 'Cinzel', serif;
   height: 15vw;
   justify-items: center;
+  position: relative;
+  top: 10vh;
 
   .heading{
     color: wheat;
@@ -503,10 +504,5 @@ main {
     display: flex;
     justify-content: center;
     font-size: 10vw;
-    padding-bottom: 10px ;
-    padding-top: 7px;
-    position: absolute;
-    top: 12vh;
-    left: 15vw;
   }
 }

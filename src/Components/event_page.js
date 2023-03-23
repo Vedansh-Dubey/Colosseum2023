@@ -46,8 +46,12 @@ function Event_page({ event_name, description, rules, registration }) {
     setShouldRunEffect(true);
   };
 
+  const styles4={
+    height:'100vh'
+  }
+
   return (
-    <main>
+    <main className='event_info_main' style={styles4}>
       <section className="mast">
         <figure className="mast__bg" style={{backgroundImage: 'url(https://images6.alphacoders.com/614/614315.jpg)'}}></figure>
         <header className="mast__header">
