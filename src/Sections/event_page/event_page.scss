@@ -1,0 +1,309 @@
+// Config: fonts
+$font-mono: "Cutive Mono", monospace;
+// Config: Ease
+$ease-cb: cubic-bezier(.19,1,.22,1);
+$fuschia: #5cf9ee;
+$button-bg: $fuschia;
+$button-text-color: #fff;
+
+//--------------------------
+//  nth-trans-delay()
+//  @description: Transition Delay on nth-childs
+//  @param: $delay_items: [7]    - number of nth-of-type items to create
+//  @param: $delay_time:[1.5s]   - transition-dealy value
+//--------------------------
+@mixin nth-trans-delay($delay_items: 7, $delay_time: 0.05s){
+@for $i from 1 through $delay_items {
+  &:nth-child(#{$i}) {   
+   transition-delay: $delay_time * $i; 
+  }
+ }
+}
+
+p{
+  font-weight: 400;
+    font-size: 18px;
+    padding: 0;
+    background: rgba(0, 0, 0, 0);
+    
+}
+
+//--------------------------
+//  nth-ani-delay()
+//  @description: Animation Delay on nth-childs
+//  @param: $delay_items: [7] - number of nth-of-type items to create
+//  @param: $delay_time:[1.5s] - transition-dealy value
+//--------------------------
+@mixin nth-ani-delay($delay_items: 7, $delay_time: 0.05s){
+@for $i from 1 through $delay_items {
+  &:nth-child(#{$i}) {   
+   animation-delay: $delay_time * $i; 
+  }
+ }
+}
+
+.event_info_main{
+  overflow: hidden;
+}
+//--------------------------
+//  bg-overlay()
+//  @description:pseduo overlay element  
+//  @param: $bg_hex: [$color-dark] - hex value for rgba conversion
+//  @param: $bg_opacity:[0.6] - alpha transparency level
+//  @param: $top_layer: element or class name for higher z-index layer
+//--------------------------
+@mixin bg-overlay($bg_hex: #111, $bg_opacity: 0.6, $top_layer: 'header') {
+  &:after {
+    z-index: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba($bg_hex, $bg_opacity);
+  }
+  
+  // Layer atop overlay
+  & > #{$top_layer}{
+    z-index: 2;
+    position: relative;
+  }
+}
+//Setups
+*, *:before, *:after {
+  box-sizing: border-box; 
+  
+}
+
+
+Body
+body {
+  
+  margin: 0;
+  width: 100%;
+  font-family: $font-mono;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+  text-rendering: optimizeLegibility;
+}
+
+.sep{
+  width: 3em;
+  height: 1px;
+  margin: 1em auto;
+  background-color: rgba(255,255,255,0.4);
+}
+.mast{
+  position: relative;
+  display:flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  
+  // background-color: #111;
+  @include bg-overlay(rgb(17 17 17 / 90%), 0.9);  
+  
+  &__bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: 50%;
+  }
+  .mast > header{
+    position: relative;
+    top: -10vh;
+  }
+  
+  &__header{
+    padding: 5%;
+    position: fixed;
+    top: -5vh;
+  }
+  &__title{
+    font-family: $font-mono;
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  // Letter animation
+  &__title span{
+    animation: letter-glow 0.7s 0s ease both;
+    @include nth-ani-delay(25, 0.005s);
+  }
+  //Letter animation
+  &__text{
+    font-family: $font-mono;
+    font-size: 1.2em;
+    margin: 0 0 0.5em;
+    line-height: 1.5;
+    white-space: pre;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  &__text span{
+    animation: letter-glow 0.7s 0s ease both;
+    @include nth-ani-delay(800, 0.01s);
+  }
+  
+  h3.mast__title.js-spanize.subtitle{
+    font-size: 1.5em;
+    padding: 2vh;
+  }
+  div.textbox{
+    position: relative;
+    top: 1.5vh;
+    height: 35vh;
+    overflow-x: auto;
+    overflow-y: scroll;
+    display: block;
+  }
+}
+div.textbox::-webkit-scrollbar {
+  width: 8px;
+}
+
+div.textbox::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+div.textbox::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+div.textbox::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+// Letter Glow
+@keyframes letter-glow{
+  0%   { opacity: 0; text-shadow: 0px 0px 1px rgba(255,255,255,0.1)}
+  66%  { opacity: 1; text-shadow: 0px 0px 20px rgba(255,255,255,0.9) }
+  77%   { opacity: 1;  }
+  100% { opacity:0.7; text-shadow: 0px 0px 20px rgba(255,255,255,0.0)}
+}
+
+/*   
+    Spot is the span on the inside of the href that
+    fills the parent and makes the hover and link work
+    for the entire div
+*/
+.bottom{
+  
+  position: relative;
+  bottom: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+a.button{
+  overflow: hidden;
+  color: white;
+  font-size: 1.1em;
+text-decoration: none;
+}
+
+.spot {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/*
+    This is the outer svg wrapper that the SVG itself will 
+    fill. Multiple svg-wrapper classes can be put side by side.
+*/
+
+.svg-wrapper {
+  margin-top: 0;
+  position: relative;
+  width: 22vw;
+  height: 40px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px
+} 
+
+
+#shape {
+  width: 22vw;
+  height: 40px;
+  stroke-width: 6px;
+  fill: transparent;
+  stroke: #009FFD;
+  stroke-dasharray: 1 4;
+  stroke-dashoffset: 0;
+  transition: 1s all ease;
+}
+
+.svg-wrapper:hover #shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke: #06D6A0;
+}
+
+.svg-wrapper {
+  padding-inline-start: 8vw;
+  width: 22vw;
+  height: 40px;
+  position: relative; /* set position to relative to contain absolute elements */
+  display: inline-block; /* make wrapper display inline with its content */
+}
+
+.button {
+  cursor: url(./cursor2.png), pointer;
+  width: 22vw;
+  height: 40px;
+  position: absolute; /* set button to absolute position */
+  top: 0; /* position button at the top of the wrapper */
+  left: 0; /* position button at the left of the wrapper */
+  z-index: 2; /* set z-index higher than other elements */
+  padding: 9px 5px; /* add padding to button */
+  color: #fff; /* set text color for button */
+  text-decoration: none; /* remove underline from button text */
+}
+
+svg {
+  width: 22vw;
+  height: 40px;
+  position: absolute; /* set svg to absolute position */
+  top: 0; /* position svg at the top of the wrapper */
+  left: 0; /* position svg at the left of the wrapper */
+  z-index: 1; /* set z-index lower than button */
+}
+
+rect {
+  width: 22vw;
+  height: 40px;
+  fill: transparent; /* make rect transparent to let svg background color show */
+  stroke: #0077c0; /* set border color for rect */
+  stroke-width: 2; /* set border width for rect */
+}
