@@ -30,6 +30,7 @@
 	margin: 0 1rem;
 	color: var(--textColor);
 	text-decoration: none;
+	cursor: url(./cursor2.png), pointer;
 }
 
 .Links:hover {

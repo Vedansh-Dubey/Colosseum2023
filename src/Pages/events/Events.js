@@ -1,6 +1,5 @@
 import React from 'react';
-import EventCards from "../../Components/EventCards"
-import EventPage from '../../Components/event_page';
+import EventCards from "../../Sections/EventCards"
 import "./style.css"
 const Events = () => {
   return (

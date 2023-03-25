@@ -215,7 +215,7 @@ div.textbox::-webkit-scrollbar-thumb:hover {
 .bottom{
   
   position: relative;
-  bottom: 10vh;
+  bottom: 15vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -279,6 +279,7 @@ text-decoration: none;
 }
 
 .button {
+  cursor: url(./cursor2.png), pointer;
   width: 22vw;
   height: 40px;
   position: absolute; /* set button to absolute position */

@@ -1,5 +1,5 @@
 import React from 'react';
-import EventPage from '../../Components/event_page';
+import EventPage from '../../Sections/event_page';
 import "./InfoPage.css"
 
 export const Technohunt = () => {
