@@ -8,25 +8,33 @@ function Event_page({ event_name, description, rules, registration }) {
 
   useEffect(() => {
     if (shouldRunEffect) {
-      var s;
-      const spanizeLetters = {
+      const spanizeWords = {
         settings: {
-          letters: document.querySelectorAll('.js-spanize'),
+          words: document.querySelectorAll('.js-spanize'),
         },
         init: function() {
-          s = this.settings;
           this.bindEvents();
         },
         bindEvents: function(){
-          s.letters.forEach(function(el) {
-            var spanizer = el.textContent.trim().split("");
-            el.innerHTML = '<span>' + spanizer.join('</span><span>') + '</span>';
+          const words = Array.from(this.settings.words);
+          words.forEach(function(el) {
+            const spanizer = el.innerHTML.trim().split(" ").map(function(word) {
+              if (word === '&lt;br&gt;' || word === '<br>') {
+                return '<br>';
+              } else {
+                return '<span>' + word + '</span> <span> </span>';
+              }
+            }).join("");
+            el.innerHTML = spanizer;
           });
         },
       };
-      spanizeLetters.init();
+      spanizeWords.init();
     }
   }, [stateValue, shouldRunEffect]);
+    
+  
+  
 
   const handleClickRules = () => {
     setStateValue(rules);
@@ -41,7 +49,7 @@ function Event_page({ event_name, description, rules, registration }) {
   };
 
   const handleClickRegister = () => {
-    setStateValue(rules);
+    setStateValue(registration);
     setSubtitle("register")
     setShouldRunEffect(true);
   };

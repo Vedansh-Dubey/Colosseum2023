@@ -12,12 +12,12 @@ function OurTeamSection() {
           <p>Front-end web developer, NLP and Machine Learning Enthusiast</p>
         </div>
         <div className="member">
-          <img src="https://i.ibb.co/hd9642t/Whats-App-Image-2023-03-12-at-12-16-20-AM-photoaidcom-cropped.png" alt="" />
+          <img src="https://i.ibb.co/QQrxHtR/Whats-App-Image-2023-03-25-at-13-55-04.jpg" alt="" />
           <h2>Divya Dhage</h2>
           <p>Android App developer, Loves to solve coding problems</p>
         </div>
         <div className="member">
-          <img src="https://i.ibb.co/8xR3DtN/badar-photoaidcom-cropped.png" alt="" />
+          <img src="https://i.ibb.co/WG41fhQ/Whats-App-Image-2023-03-25-at-13-54-28.jpg" alt="" />
           <h2>Abhishek Badar</h2>
           <p>Front-end web developer, Intense about graphics technology</p>
         </div>

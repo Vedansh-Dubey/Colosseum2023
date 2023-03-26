@@ -141,8 +141,9 @@ body {
   // Letter animation
   &__title span{
     animation: letter-glow 0.7s 0s ease both;
-    @include nth-ani-delay(25, 0.005s);
-  }
+        @include nth-ani-delay(20, 0.009s);
+    -webkit-animation: letter-glow 0.7s 0s ease both;
+}
   //Letter animation
   &__text{
     font-family: $font-mono;
@@ -152,11 +153,13 @@ body {
     white-space: pre;
     display: flex;
     flex-wrap: wrap;
+    justify-self: center;
+    justify-content: center;
   }
   
   &__text span{
     animation: letter-glow 0.7s 0s ease both;
-    @include nth-ani-delay(800, 0.01s);
+    @include nth-ani-delay(500, 0.01s);
   }
   
   h3.mast__title.js-spanize.subtitle{
@@ -202,7 +205,7 @@ div.textbox::-webkit-scrollbar-thumb:hover {
 // Letter Glow
 @keyframes letter-glow{
   0%   { opacity: 0; text-shadow: 0px 0px 1px rgba(255,255,255,0.1)}
-  66%  { opacity: 1; text-shadow: 0px 0px 20px rgba(255,255,255,0.9) }
+  66%  { opacity: 1; text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.443) }
   77%   { opacity: 1;  }
   100% { opacity:0.7; text-shadow: 0px 0px 20px rgba(255,255,255,0.0)}
 }
