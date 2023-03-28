@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import './App.css';
-import Navbar from './Sections/Navbar';
+// import Navbar from './Sections/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // import Events from './Pages/events';
 // import Homepage from './Pages/homepage';
@@ -16,12 +16,13 @@ const LazyEvents = lazy(() => import('./Pages/events'));
 const LazyOurTeamSection = lazy(() => import('./Pages/our_team'));
 const LazyAbout = lazy(() => import('./Pages/About'));
 const LazyGalleryPage = lazy(() => import('./Pages/Gallery'));
+const LazyNavbar = lazy(() => import('./Sections/Navbar'));
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
       <Suspense fallback={<Loader />}>
+      <LazyNavbar />
         <Routes>
           <Route path="/" element={<LazyHomepage />} />
           <Route path="/events" element={<LazyEvents />} />
