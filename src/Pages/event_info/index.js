@@ -1,3 +1,3 @@
-import { Technical, Technohunt } from "./InfoPage.js";
+import { YouthParliament, Technohunt } from "./InfoPage.js";
 
-export {Technical, Technohunt}
+export {YouthParliament, Technohunt}

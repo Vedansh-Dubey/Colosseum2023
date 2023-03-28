@@ -1,0 +1,23 @@
+.main {
+    margin: 5px;
+    padding: 0;
+    position: relative;
+    top: 10vh;
+}
+
+.hr{
+width:10vw;
+margin-left: 45%;
+}
+
+.heading {
+    font-size: 7vw;
+    color: wheat;
+}
+
+.para{
+    padding: 20px;
+}
+.gallery{
+    padding-right:10px;
+}

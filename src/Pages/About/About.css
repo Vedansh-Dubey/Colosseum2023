@@ -1,0 +1,61 @@
+.about {
+    position:relative;
+    top: 10vh;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 50px;
+    
+  }
+  
+  .h1 {
+    font-size: 48px;
+    text-align: center;
+    color: #0077B5;
+  }
+  
+  .h2 {
+    font-size: 32px;
+    margin-top: 30px;
+    color: #0077B5;
+  }
+  
+  .p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .li {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+ .p.registration {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .about {
+      padding: 30px;
+    }
+  
+    .h1 {
+      font-size: 36px;
+    }
+  
+    .h2 {
+      font-size: 24px;
+    }
+  
+   .p {
+      font-size: 18px;
+    }
+  }
+  
