@@ -10,7 +10,7 @@ export const YouthParliament = () => {
         description="The objective of Youth Parliament is to strengthen the roots of democracy inculcate healthy habits <br> of discipline, tolerance of the view of others and to enable the student community to know about practices and procedures of the Parliament."
         rules=
         "You are provided with 4 bills, choose the one which suits you best. You will be divided in 2 - Ruling party & Opposition Party. Ruling Party speaks for the motion. Opposition Party speaks against the motion. "
-        registration="Register from the following link <br> <a href='https://www.google.com'>Click Here</a> <br> President: Yash Chotwani <br> Event Head: Megha Shivhare <br> Co-head: Bharat Shukla" />
+        registration="Register from the following link <br> <a href='https://www.google.com'>Click Here</a> <br> President: Yash Chotwani - 7057100832 <br> Event Head: Megha Shivhare <br> Co-head: Bharat Shukla" />
     </div>
   );
 };

@@ -106,6 +106,7 @@ body {
   width: 100%;
   height: 100vh;
   color: #fff;
+  justify-content: center;
   
   // background-color: #111;
   @include bg-overlay(rgb(17 17 17 / 90%), 0.9);  
