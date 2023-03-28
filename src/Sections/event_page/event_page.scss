@@ -83,7 +83,7 @@ body {
   margin: 0;
   width: 100%;
   font-family: $font-mono;
-  line-height: 1.5;
+  line-height: 1;
   font-weight: 400;
   font-style: normal;
   -ms-text-size-adjust: 100%;
@@ -147,9 +147,9 @@ body {
   //Letter animation
   &__text{
     font-family: $font-mono;
-    font-size: 1.2em;
+    font-size: 1rem;
     margin: 0 0 0.5em;
-    line-height: 1.5;
+    line-height: 1.3;
     white-space: pre;
     display: flex;
     flex-wrap: wrap;
@@ -159,8 +159,9 @@ body {
   
   &__text span{
     animation: letter-glow 0.7s 0s ease both;
-    @include nth-ani-delay(500, 0.01s);
-  }
+        @include nth-ani-delay(100, 0.01s);
+    -webkit-animation: letter-glow 0.7s 0s ease both;
+}
   
   h3.mast__title.js-spanize.subtitle{
     font-size: 1.5em;
@@ -309,4 +310,12 @@ rect {
   fill: transparent; /* make rect transparent to let svg background color show */
   stroke: #0077c0; /* set border color for rect */
   stroke-width: 2; /* set border width for rect */
+}
+
+.contents {
+  font-size: 1rem;
+  white-space: pre-line;
+  overflow: hidden;
+  animation: glow 1s ;
+  -webkit-animation: letter-glow 0.9s 0s ease both;
 }

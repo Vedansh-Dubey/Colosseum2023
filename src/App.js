@@ -1,28 +1,26 @@
 import React, { lazy, Suspense } from 'react';
 import './App.css';
-// import Navbar from './Sections/Navbar';
+import Navbar from './Sections/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-// import Events from './Pages/events';
-// import Homepage from './Pages/homepage';
+import Events from './Pages/events';
 import { Technohunt, YouthParliament } from './Pages/event_info';
-// import OurTeamSection from './Pages/our_team';
-// import About from './Pages/About';
-// import GalleryPage from './Pages/Gallery';
+
 import Loader from './Sections/loader';
-// import { YouthParliament } from './Pages/event_info';
+
 
 const LazyHomepage = lazy(() => import('./Pages/homepage'));
 const LazyEvents = lazy(() => import('./Pages/events'));
 const LazyOurTeamSection = lazy(() => import('./Pages/our_team'));
 const LazyAbout = lazy(() => import('./Pages/About'));
 const LazyGalleryPage = lazy(() => import('./Pages/Gallery'));
-const LazyNavbar = lazy(() => import('./Sections/Navbar'));
+
+
 
 function App() {
   return (
     <BrowserRouter>
       <Suspense fallback={<Loader />}>
-      <LazyNavbar />
+        <Navbar />
         <Routes>
           <Route path="/" element={<LazyHomepage />} />
           <Route path="/events" element={<LazyEvents />} />
