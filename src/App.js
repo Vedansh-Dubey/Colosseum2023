@@ -4,7 +4,7 @@ import Navbar from './Sections/Navbar';
 import { BrowserRouter, Route, Routes, Redirect } from 'react-router-dom';
 import Events from './Pages/events';
 import { Technohunt, YouthParliament } from './Pages/event_info';
-import Homepage from './Pages/homepage';
+// import Homepage from './Pages/homepage';
 
 import Loader from './Sections/loader';
 
@@ -18,11 +18,11 @@ const LazyGalleryPage = lazy(() => import('./Pages/Gallery'));
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/Colosseum2023'>
       <Suspense fallback={<Loader />}>
         <Navbar />
         <Routes>
-          <Route path="/home" element={<Homepage />} />
+          <Route exact path="/Colosseum2023" element={<LazyHomepage />} />
           <Route path="/events" element={<LazyEvents />} />
           <Route path="/events/1" element={<Technohunt />} />
           <Route path="/events/2" element={<YouthParliament />} />
