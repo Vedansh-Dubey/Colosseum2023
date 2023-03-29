@@ -18,7 +18,7 @@ const LazyGalleryPage = lazy(() => import('./Pages/Gallery'));
 
 function App() {
   return (
-    <BrowserRouter basename='/Colosseum2023'>
+    <BrowserRouter>
       <Suspense fallback={<Loader />}>
         <Navbar />
         <Routes>
