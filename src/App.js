@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import './App.css';
 import Navbar from './Sections/Navbar';
-import { BrowserRouter, Route, Routes, Redirect } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Redirect, Navigate } from 'react-router-dom';
 import Events from './Pages/events';
 import { Technohunt, YouthParliament } from './Pages/event_info';
 // import Homepage from './Pages/homepage';
@@ -28,7 +28,7 @@ function App() {
           <Route path="/events/2" element={<YouthParliament />} />
           <Route path="/about" element={<LazyAbout />} />
           <Route path="/gallery" element={<LazyGalleryPage />} />
-          <Route render={() => <Redirect to="/" />} />
+          <Route render={() => <Navigate to="/" />} />
         </Routes>
       </Suspense>
     </BrowserRouter>
