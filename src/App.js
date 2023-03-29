@@ -10,7 +10,6 @@ import Loader from './Sections/loader';
 
 const LazyHomepage = lazy(() => import('./Pages/homepage'));
 const LazyEvents = lazy(() => import('./Pages/events'));
-const LazyOurTeamSection = lazy(() => import('./Pages/our_team'));
 const LazyAbout = lazy(() => import('./Pages/About'));
 const LazyGalleryPage = lazy(() => import('./Pages/Gallery'));
 
@@ -26,7 +25,6 @@ function App() {
           <Route path="/events" element={<LazyEvents />} />
           <Route path="/events/1" element={<Technohunt />} />
           <Route path="/events/2" element={<YouthParliament />} />
-          <Route path="/our-team" element={<LazyOurTeamSection />} />
           <Route path="/about" element={<LazyAbout />} />
           <Route path="/gallery" element={<LazyGalleryPage />} />
         </Routes>

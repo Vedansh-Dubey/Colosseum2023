@@ -11,13 +11,13 @@
 
 
 .pirate-spinner {
-    background-image:url(https://i.ibb.co/kHfd1Mv/pngegg.png);
+    background-image:url(https://i.ibb.co/1KTXz6r/pngegg-1.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 200px;
     height: 200px;
     animation: spin 1s linear infinite;
-    -webkit-animation:spin 1s linear infinite;;
+    -webkit-animation: spin 1s linear infinite;
 }
   
   @keyframes spin {
@@ -26,6 +26,10 @@
     }
     100% {
       transform: rotate(360deg);
-    }
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+}
   }
   

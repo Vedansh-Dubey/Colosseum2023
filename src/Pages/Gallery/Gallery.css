@@ -8,6 +8,7 @@
 .hr{
 width:10vw;
 margin-left: 45%;
+margin-top: 20px;
 }
 
 .heading {
@@ -16,8 +17,17 @@ margin-left: 45%;
 }
 
 .para{
-    padding: 20px;
+  padding: 15px;
 }
 .gallery{
-    padding-right:10px;
+    padding-top: 20px;
+}
+
+.galery{
+    padding: 25px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }

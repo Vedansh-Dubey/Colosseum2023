@@ -1,10 +1,5 @@
-import { letterSpacing } from '@mui/system';
 import React from 'react';
-import { render } from 'react-dom';
 import ResponsiveGallery from 'react-responsive-gallery';
-import "yet-another-react-lightbox/styles.css";
-import style from './Gallery.css'
-
 const photos = [
     { src: "https://i.ibb.co/Wfc8pCK/IMG-20190508-WA0009.jpg" },
     { src: "https://i.ibb.co/48bhQv3/IMG-20190508-WA0005.jpg" },
@@ -31,12 +26,15 @@ const photos = [
 
 const GalleryComponent = () => {
     return (
+        <div className='galery'>
         <ResponsiveGallery
-            useLightBox
+            className="gal"
             images={photos}
         >
         </ResponsiveGallery>
+        </div>
     );
 };
 
 export default GalleryComponent;
+
