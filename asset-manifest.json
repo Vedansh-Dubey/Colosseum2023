@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Colosseum2023/home/static/css/main.a8ea67c8.css",
-    "main.js": "/Colosseum2023/home/static/js/main.851f361c.js",
+    "main.js": "/Colosseum2023/home/static/js/main.96e15ee4.js",
     "static/css/222.c0c2a635.chunk.css": "/Colosseum2023/home/static/css/222.c0c2a635.chunk.css",
     "static/js/222.a5c4b450.chunk.js": "/Colosseum2023/home/static/js/222.a5c4b450.chunk.js",
     "static/css/616.b36b5900.chunk.css": "/Colosseum2023/home/static/css/616.b36b5900.chunk.css",
@@ -13,7 +13,7 @@
     "static/media/ship.mp4": "/Colosseum2023/home/static/media/ship.a0220509d3d8041aee73.mp4",
     "index.html": "/Colosseum2023/home/index.html",
     "main.a8ea67c8.css.map": "/Colosseum2023/home/static/css/main.a8ea67c8.css.map",
-    "main.851f361c.js.map": "/Colosseum2023/home/static/js/main.851f361c.js.map",
+    "main.96e15ee4.js.map": "/Colosseum2023/home/static/js/main.96e15ee4.js.map",
     "222.c0c2a635.chunk.css.map": "/Colosseum2023/home/static/css/222.c0c2a635.chunk.css.map",
     "222.a5c4b450.chunk.js.map": "/Colosseum2023/home/static/js/222.a5c4b450.chunk.js.map",
     "616.b36b5900.chunk.css.map": "/Colosseum2023/home/static/css/616.b36b5900.chunk.css.map",
@@ -25,6 +25,6 @@
   },
   "entrypoints": [
     "static/css/main.a8ea67c8.css",
-    "static/js/main.851f361c.js"
+    "static/js/main.96e15ee4.js"
   ]
 }
