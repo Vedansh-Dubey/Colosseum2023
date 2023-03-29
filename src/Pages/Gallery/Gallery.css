@@ -1,0 +1,33 @@
+.main {
+    margin: 5px;
+    padding: 0;
+    position: relative;
+    top: 10vh;
+}
+
+.hr{
+width:10vw;
+margin-left: 45%;
+margin-top: 20px;
+}
+
+.heading {
+    font-size: 7vw;
+    color: wheat;
+}
+
+.para{
+  padding: 15px;
+}
+.gallery{
+    padding-top: 20px;
+}
+
+.galery{
+    padding: 25px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}

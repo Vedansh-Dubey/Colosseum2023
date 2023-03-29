@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Homepage.css';
 import ship from './ship.mp4';
-import {useEffect} from 'react';
+
+const VideoPlayer = () => {
+  return (
+    <video autoPlay loop muted>
+      <source src={ship} type="video/mp4" />
+    </video>
+  );
+};
 
 function Homepage() {
-
   useEffect(() => {
     let countDown = () => {
-      let futureDate = new Date("4 4 2023");
+      let futureDate = new Date("4 19 2023");
       let currentDate = new Date();
       let myDate = futureDate - currentDate;
 
@@ -20,7 +26,7 @@ function Homepage() {
       document.getElementById('hours').innerHTML = hourss;
       document.getElementById('min').innerHTML = mins;
       document.getElementById('sec').innerHTML = secs;
-    }
+    };
 
     countDown();
 
@@ -29,30 +35,38 @@ function Homepage() {
 
   return (
     <div className="homepage-container">
-      <video autoPlay loop muted>
-        <source src={ship} type="video/mp4" />
-      </video>
-      <div className='box'>
-      <h1 className="homepage-heading">Colosseum 13.0</h1>
+      <React.Suspense fallback={<div>Loading...</div>}>
+        <VideoPlayer />
+      </React.Suspense>
+      <div className="box">
+        <h1 className="homepage-heading">Colosseum 13.0</h1>
       </div>
       <div class="countdown-container">
         <div>
-          <p id="days" class="big-text">0</p>
+          <p id="days" class="big-text">
+            0
+          </p>
           <span>Days</span>
         </div>
         <div>
-          <p id="hours" class="big-text">0</p>
+          <p id="hours" class="big-text">
+            0
+          </p>
           <span>Hours</span>
         </div>
         <div>
-          <p id="min" class="big-text">0</p>
+          <p id="min" class="big-text">
+            0
+          </p>
           <span>Min</span>
         </div>
         <div>
-          <p id="sec" class="big-text">0</p>
+          <p id="sec" class="big-text">
+            0
+          </p>
           <span>Sec</span>
         </div>
-      </div>    
+      </div>
     </div>
   );
 }

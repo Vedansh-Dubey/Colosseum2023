@@ -1,33 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@800&family=Pirata+One&display=swap');
 
+
+
+
+
 :root {
   --color1: rgb(0, 231, 255);
   --color2: rgb(255, 0, 231);
   --firstevent1: #fac;
   --firstevent2: #ddccaa;
-  --firsteventfront: url(https://i.ibb.co/6Jt9LMH/valo.png);
+  --firsteventfront: url(https://i.ibb.co/VNsP2kD/Whats-App-Image-2023-03-28-at-11-21-58.jpg);
   --secondevent1: #54a29e;
   --secondevent2: #a79d66;
-  --secondeventfront: url(https://i.ibb.co/6Jt9LMH/valo.png);
+  --secondeventfront: url(https://i.ibb.co/BKL2ySQ/valorant.jpg);
   --thirdevent1: #efb2fb;
   --thirdevent2: #acc6f8;
-  --thirdeventfront: url(https://i.ibb.co/8PLWMyt/Discussion-3.png);
+  --thirdeventfront: url(https://i.ibb.co/VvtMSbP/Youth-parliament.jpg);
   --firstbuffer1: #efb2fb;
   --firstbuffer2: #acc6f8;
-  --firstbufferfront: url(https://i.ibb.co/ncWBrxD/Whats-App-Image-2023-03-06-at-12-26-04.jpg);
+  --firstbufferfront: url(https://i.ibb.co/1YNVLTm/Innovation-Island.jpg);
   --fourthevent1: #fac;
   --fourthevent2: #ddccaa;
-  --fourtheventfront: url(https://wallpaperaccess.com/full/3037905.jpg);
+  --fourtheventfront: url(https://i.ibb.co/Xj7znGp/Techno-Hunt.jpg);
   --fifthevent1: #54a29e;
   --fifthevent2: #a79d66;
-  --fiftheventfront: url(https://i.ibb.co/ncWBrxD/Whats-App-Image-2023-03-06-at-12-26-04.jpg);
+  --fiftheventfront: url(https://i.ibb.co/TtLhZdL/Box-Cricket.jpg);
   --sixthevent1: #efb2fb;
   --sixthevent2: #acc6f8;
-  --sixtheventfront: url(https://i.ibb.co/BnP3rkZ/pirate-css.webp);
+  --sixtheventfront: url(https://i.ibb.co/sJQ2Mhz/Recrewtment.jpg);
   --secondbuffer1: #efb2fb;
   --secondbuffer2: #acc6f8;
-  --secondbufferfront: url(https://i.ibb.co/ncWBrxD/Whats-App-Image-2023-03-06-at-12-26-04.jpg);
+  --secondbufferfront: url(https://i.ibb.co/80bQCFw/Aws-workshop.jpg);
 }
 
 .card {
@@ -469,7 +473,7 @@ p {
   font-weight: 400;
   font-size: 18px;
   padding: 1em;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0);
   margin-top: 0;
 }
 
@@ -506,3 +510,4 @@ main {
     font-size: 10vw;
   }
 }
+
