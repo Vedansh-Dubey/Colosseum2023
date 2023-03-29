@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import './App.css';
 import Navbar from './Sections/Navbar';
-import {HashRouter as BrowserRouter, Route, Routes, Redirect, Navigate } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Redirect, Navigate } from 'react-router-dom';
 import Events from './Pages/events';
 import { Technohunt, YouthParliament } from './Pages/event_info';
 // import Homepage from './Pages/homepage';
