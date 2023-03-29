@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import './App.css';
 import Navbar from './Sections/Navbar';
-import { BrowserRouter, Route, Routes, Redirect, Navigate } from 'react-router-dom';
+import {HashRouter, Route, Routes, Redirect, Navigate } from 'react-router-dom';
 import Events from './Pages/events';
 import { Technohunt, YouthParliament } from './Pages/event_info';
 // import Homepage from './Pages/homepage';
@@ -18,7 +18,7 @@ const LazyGalleryPage = lazy(() => import('./Pages/Gallery'));
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Suspense fallback={<Loader />}>
         <Navbar />
         <Routes>
@@ -30,7 +30,7 @@ function App() {
           <Route path="/gallery" element={<LazyGalleryPage />} />
         </Routes>
       </Suspense>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
