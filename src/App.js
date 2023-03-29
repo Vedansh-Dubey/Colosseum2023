@@ -22,7 +22,7 @@ function App() {
       <Suspense fallback={<Loader />}>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Homepage />} />
+          <Route path="/home" element={<Homepage />} />
           <Route path="/events" element={<LazyEvents />} />
           <Route path="/events/1" element={<Technohunt />} />
           <Route path="/events/2" element={<YouthParliament />} />
