@@ -2,7 +2,7 @@
   "name": "colloseum23",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Vedansh-Dubey.github.io/Colosseum2023",
+  "homepage": "http://Vedansh-Dubey.github.io/Colosseum2023/",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
