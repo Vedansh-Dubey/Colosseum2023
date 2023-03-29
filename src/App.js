@@ -4,6 +4,7 @@ import Navbar from './Sections/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Events from './Pages/events';
 import { Technohunt, YouthParliament } from './Pages/event_info';
+import Homepage from './Pages/homepage';
 
 import Loader from './Sections/loader';
 
@@ -21,7 +22,7 @@ function App() {
       <Suspense fallback={<Loader />}>
         <Navbar />
         <Routes>
-          <Route path="" element={<LazyHomepage />} />
+          <Route path="" element={<Homepage />} />
           <Route path="/events" element={<LazyEvents />} />
           <Route path="/events/1" element={<Technohunt />} />
           <Route path="/events/2" element={<YouthParliament />} />
