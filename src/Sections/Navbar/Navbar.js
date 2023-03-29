@@ -48,9 +48,9 @@ function Navbar() {
 
 	return (
 		<header className="navbar">
-			<Link className="Links" to="/Colosseum2023">  <img className="image links" src='https://i.ibb.co/mH4Nqg6/stc-official-logo-1.png' alt="stc-official-logo" /></Link>
+			<Link className="Links" to="/">  <img className="image links" src='https://i.ibb.co/mH4Nqg6/stc-official-logo-1.png' alt="stc-official-logo" /></Link>
 			<nav ref={navRef}>
-				<NavLink className="Links" activeClassName="active" to="/home">Home</NavLink>
+				<NavLink className="Links" activeClassName="active" to="/">Home</NavLink>
 				<NavLink className="Links" activeClassName="active" to="/events">Adventures</NavLink>
 				<NavLink className="Links" activeClassName="active" to="/about">About</NavLink>
 				<NavLink className="Links" activeClassName="active" to="/gallery">Gallery</NavLink>

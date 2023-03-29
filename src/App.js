@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import './App.css';
 import Navbar from './Sections/Navbar';
-import { BrowserRouter, Route, Routes, Redirect, Navigate } from 'react-router-dom';
+import {HashRouter as BrowserRouter, Route, Routes, Redirect, Navigate } from 'react-router-dom';
 import Events from './Pages/events';
 import { Technohunt, YouthParliament } from './Pages/event_info';
 // import Homepage from './Pages/homepage';
@@ -22,13 +22,12 @@ function App() {
       <Suspense fallback={<Loader />}>
         <Navbar />
         <Routes>
-          <Route exact path="/Colosseum2023" element={<LazyHomepage />} />
+          <Route exact path="/" element={<LazyHomepage />} />
           <Route path="/events" element={<LazyEvents />} />
           <Route path="/events/1" element={<Technohunt />} />
           <Route path="/events/2" element={<YouthParliament />} />
           <Route path="/about" element={<LazyAbout />} />
           <Route path="/gallery" element={<LazyGalleryPage />} />
-          <Route render={() => <Navigate to="/" />} />
         </Routes>
       </Suspense>
     </BrowserRouter>
