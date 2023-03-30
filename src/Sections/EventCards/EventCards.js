@@ -83,11 +83,11 @@ const EventCards = () => {
         </h2>
       </div>
       <div className="Section" style={{
-        overflow: 'hidde',
+        overflow: 'hidden',
         position: 'relative',
         top: '10vh',
       }}>
-        <section className="cards">
+        <section className="cards" style={{paddingBlockStart: '15px'}}>
           <Link to="/events/1" className="card firstevent animated" data-text="first event"></Link>
           <Link to="/events/2" className="card secondevent animated"></Link>
           <Link to="/events/3" className="card thirdevent animated"></Link>
