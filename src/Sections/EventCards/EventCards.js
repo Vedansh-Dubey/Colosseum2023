@@ -88,18 +88,18 @@ const EventCards = () => {
         top: '10vh',
       }}>
         <section className="cards" style={{paddingBlockStart: '15px'}}>
-          <Link to="/events/1" className="card firstevent animated" data-text="first event"></Link>
-          <Link to="/events/2" className="card secondevent animated"></Link>
-          <Link to="/events/3" className="card thirdevent animated"></Link>
-          <div className="card firstbuffer animated"></div>
+          <Link to="/events/YouthParliament" className="card firstevent animated" data-text="first event"></Link>
+          <Link to="/events/Valorant" className="card secondevent animated"></Link>
+          <Link to="/events/CascadingCaptain" className="card thirdevent animated"></Link>
+          <Link to="/events/InnovationIsland" className="card firstbuffer animated"></Link>
         </section>
       </div>
       <div className="Section" style={styles3}>
         <section className="cards">
-          <Link to="/events/4" className="card fourthevent animated"></Link>
-          <Link to="/events/5" className="card fifthevent animated"></Link>
-          <Link to="/events/6" className="card sixthevent animated"></Link>
-          <div className="card secondbuffer animated"></div>
+          <Link to="/events/TechnoHunt" className="card fourthevent animated"></Link>
+          <Link to="/events/BoxCricket" className="card fifthevent animated"></Link>
+          <Link to="/events/Recrewtment" className="card sixthevent animated"></Link>
+          <Link to="/events/AwsWorkshop" className="card secondbuffer animated"></Link>
         </section>
       </div>
       <style className="hover"></style>
