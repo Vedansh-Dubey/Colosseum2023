@@ -6,7 +6,7 @@ export const YouthParliament = () => {
   return (
     <div className='info'>
       <EventPage
-        event_name=" "
+        event_name="Youth Parliament"
         description=" "
         rules=" "
         registration=" " />
@@ -18,7 +18,7 @@ export const Technohunt = () => {
   return (
     <div className='info'>
       <EventPage
-        event_name=" "
+        event_name="Technohunt"
         description=" "
         rules=" "
         registration=" " />
@@ -30,7 +30,7 @@ export const BoxCricket = () => {
   return (
     <div className='info'>
       <EventPage
-        event_name=" "
+        event_name="Box Cricket"
         description=" "
         rules=" "
         registration=" " />
@@ -42,7 +42,7 @@ export const Valorant = () => {
   return (
     <div className='info'>
       <EventPage
-        event_name=" "
+        event_name="Valorant "
         description=" "
         rules=" "
         registration=" " />
@@ -54,7 +54,7 @@ export const Recrewtment = () => {
   return (
     <div className='info'>
       <EventPage
-        event_name=" "
+        event_name="Recrewtment "
         description=" "
         rules=" "
         registration=" " />
@@ -67,7 +67,7 @@ export const CascadingCaptain = () => {
   return (
     <div className='info'>
       <EventPage
-        event_name=" "
+        event_name="Cascading Captain "
         description=" "
         rules=" "
         registration=" " />
@@ -80,7 +80,7 @@ export const AwsWorkshop = () => {
   return (
     <div className='info'>
       <EventPage
-        event_name=" "
+        event_name="AWS Workshop "
         description=" "
         rules=" "
         registration=" " />
@@ -93,7 +93,7 @@ export const InnovationIsland = () => {
   return (
     <div className='info'>
       <EventPage
-        event_name=" "
+        event_name="InnovationIsland"
         description=" "
         rules=" "
         registration=" " />
