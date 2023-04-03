@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:ital,wght@0,400;0,500;0,600;1,300;1,500&display=swap');
+
 // Config: fonts
 $font-mono: "Cutive Mono", monospace;
 // Config: Ease
@@ -314,9 +316,16 @@ rect {
 }
 
 .contents {
-  font-size: 1rem;
+  font-size: 1.25rem;
   white-space: pre-line;
   overflow: hidden;
-  animation: glow 1s ;
+  animation: glow 1s;
   -webkit-animation: letter-glow 0.9s 0s ease both;
+  text-align: left;
+  font-family: fangsong;
+  line-height: 1.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
