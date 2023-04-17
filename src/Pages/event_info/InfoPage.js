@@ -48,7 +48,8 @@ export const BoxCricket = () => {
 
         rules="6 members per team, open to girls or boys.
                IT department building and start of IT parking will serve as boundaries.
-               The basketball court will be the playing area.  
+               The basketball court will be the playing area.
+               <img className='crick-img' src='https://i.ibb.co/wYjvbVw/6.png' alt='Box Cricket Image' style='width:300px; padding-top: 15px' />
                Umpire decision will be last decision."
         registration="<a href='https://rcoem.in/anon_evForm.htm?ev=143'>Ahoyy! Click Here</a> <br>Event Incharge<br>Atharva Kharabe<br>Yash Ghoderao<br><br>For more details, contact <br> Atharva Kharabe - 9579319410<br>Yash Ghoderao - 9422213962 " />
     </div>

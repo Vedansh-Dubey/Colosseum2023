@@ -34,7 +34,7 @@ function Homepage() {
   useEffect(() => {
     let intervalId = setInterval(() => {
       const now = Date.now();
-      const futureDate = new Date('4 19 2023').getTime();
+      const futureDate = new Date('4 20 2023').getTime();
       const difference = futureDate - now;
 
       const days = Math.floor(difference / 1000 / 60 / 60 / 24);
