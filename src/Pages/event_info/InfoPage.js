@@ -16,8 +16,8 @@ export const YouthParliament = () => {
                Every party member has 2-3 mins to put his/her point in front of the chair and entire parliament.
                If any party member wants to give rebuttal, he can ask chair and if he allows, he can speak.
                Pannel descission would be considered final."
-        registration= "<a href='https://rcoem.in/anon_evForm.htm?ev=143'>Ahoyy! Click Here</a> <br>Event Incharge<br>Aditi Tiwari<br>Bharat Shukla<br><br>For more details, contact <br> Bharat Shukla - 9021675390"
-        />
+        registration="<a href='https://rcoem.in/anon_evForm.htm?ev=143'>Ahoyy! Click Here</a> <br>Event Incharge<br>Aditi Tiwari<br>Bharat Shukla<br><br>For more details, contact <br> Bharat Shukla - 9021675390"
+      />
     </div>
   );
 };
@@ -51,7 +51,7 @@ export const BoxCricket = () => {
                The basketball court will be the playing area.
                <img className='crick-img' src='https://i.ibb.co/wYjvbVw/6.png' alt='Box Cricket Image' style='width:300px; padding-top: 15px' />
                Umpire decision will be last decision."
-        registration="<a href='https://rcoem.in/anon_evForm.htm?ev=143'>Ahoyy! Click Here</a> <br>Event Incharge<br>Atharva Kharabe<br>Yash Ghoderao<br><br>For more details, contact <br> Atharva Kharabe - 9579319410<br>Yash Ghoderao - 9422213962 " />
+        registration="<a href='https://rcoem.in/anon_evForm.htm?ev=143'>Ahoyy! Click Here</a> <br>Event Incharge<br>Atharva Kharabe<br>Vidit Agrawal<br><br>For more details, contact <br> Atharva Kharabe - 9579319410<br>Vidit Agrawal - 8237803273 " />
     </div>
   );
 };
@@ -65,7 +65,7 @@ export const Valorant = () => {
         rules="Teams consist of 5 players.
                The first team to win 13 rounds wins the match.
                Each player starts with a set amount of credits to purchase weapons and abilities."
-        registration="<a href='https://rcoem.in/anon_evForm.htm?ev=143'>Ahoyy! Click Here</a> <br>Event Incharge<br>Sanskar Wankhede<br>Aryan Mishra<br><br>For more details, contact <br>Sanskar Wankhede - 9322173579<br>Aryan Mishra - 7249668272 " />
+        registration="<a href='https://rcoem.in/anon_evForm.htm?ev=143'>Ahoyy! Click Here</a> <br>Event Incharge<br>Abhinash Mehta<br>Arshad Khan<br><br>For more details, contact <br>Abhinash Mehta - 8381018512<br>Arshad Khan - 8668721925 " />
     </div>
   );
 };
@@ -118,14 +118,14 @@ export const AwsWorkshop = () => {
 export const InnovationIsland = () => {
   return (
     <div className='info'>
-<EventPage
-    event_name="Innovation Island"
-    description="Innovation Island is an entrepreneurship event that requires participants to pitch their innovative idea. This event provides a platform for aspiring entrepreneurs to showcase their innovative ideas, receive feedback from experts, and win exciting prizes."
-    rules="Number of team members: 1 - 3 members
+      <EventPage
+        event_name="Innovation Island"
+        description="Innovation Island is an entrepreneurship event that requires participants to pitch their innovative idea. This event provides a platform for aspiring entrepreneurs to showcase their innovative ideas, receive feedback from experts, and win exciting prizes. Opportunity to get internship  with stipend and minimum PPO of  6.5 LPA"
+        rules="Number of team members: 1 - 3 members
            Entry for Event: Rs. 200/-
            Rounds: Online submission of abstract in first round and Offline presentation in second round"
-    registration="<a href='https://rcoem.in/anon_evForm.htm?ev=143'>Ahoyy! Click Here</a> <br>Event Incharge<br>Atharva Baheti<br>Rishi Ojha<br>Divya Dhage<br><br>For more details, contact <br>Atharva Baheti - 7517898918<br>Rishi Ojha - 9764061088 " 
-/>
+        registration="<a href='https://rcoem.in/anon_evForm.htm?ev=143'>Ahoyy! Click Here</a> <br>Event Incharge<br>Atharva Baheti<br>Rishi Ojha<br>Divya Dhage<br><br>For more details, contact <br>Atharva Baheti - 7517898918<br>Rishi Ojha - 9764061088 "
+      />
 
     </div>
   );

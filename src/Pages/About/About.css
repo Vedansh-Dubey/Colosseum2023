@@ -1,17 +1,77 @@
 .about {
     position:relative;
-    top: 10vh;
+    top: 4vh;
     width: 100vw;
     margin: 0 auto;
     padding: 50px;
-    
   }
-  
-  .h1 {
-    font-size: 48px;
-    text-align: center;
-    color: #0077B5;
+
+  .top-logo {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 15px;
+    padding-inline: 15px;
+}
+
+.sponsor{
+  background-color:white;
+  height: 250px;
+  width: 250px;
+  object-fit: contain;
+}
+
+.sponsor-wrapper{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.sposnsor-img{
+  object-fit:contain;
+  width: 250px;
+  height: 250px;
+}
+
+
+.stc-logo{
+  width: 45px;
+  height: 45px;
+}
+
+.ieee-logo{
+  width: 100px;
+}
+
+.rcoem-logo{
+  width: 120px;
+}
+
+.h1 {
+  font-size: 48px;
+  text-align: center;
+  color: #0077B5;
+}
+
+@media(min-width: 768px){
+  .top-logo{
+
   }
+
+  .rcoem-logo{
+    width: 220px;
+  }
+
+  .stc-logo{
+    width: 80px;
+    height: 80px;
+  }
+  .ieee-logo{
+    width: 200px;
+  }
+}
   
   .h2 {
     font-size: 32px;
@@ -43,11 +103,11 @@
   
   @media screen and (max-width: 768px) {
     .about {
-      padding: 30px;
+      padding: 0px;
     }
   
     .h1 {
-      font-size: 36px;
+      font-size: 6vw;
     }
   
     .h2 {
@@ -55,7 +115,43 @@
     }
   
    .p {
+    padding: 10px;
       font-size: 18px;
     }
   }
   
+  .sponsor-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: visible;
+    -webkit-overflow-scrolling: touch;
+    gap: 15px;
+    width: calc((250px + 15px) * 7);
+    animation: scroll 15s cubic-bezier(0.42, 0, 0.58, 1) infinite alternate;
+    -webkit-animation: scroll 15s cubic-bezier(0.42, 0, 0.58, 1) infinite alternate;
+}
+  
+  .sponsor {
+    width: 260px;
+    height: 260px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+  
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1 * (250px + 15px) * 3));
+    -webkit-transform: translateX(calc(-1 * (250px + 15px) * 3));
+    -moz-transform: translateX(calc(-1 * (250px + 15px) * 3));
+    -ms-transform: translateX(calc(-1 * (250px + 15px) * 3));
+    -o-transform: translateX(calc(-1 * (250px + 15px) * 3));
+}
+}
