@@ -6,14 +6,33 @@
     padding: 50px;
   }
 
+  .person-wrapper{
+    padding-top: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    gap: 20px;
+    padding-inline: 10px;
+    flex-wrap: wrap;
+  }
+
+  .person-name{
+    font-size:20px;
+    letter-spacing: 2px;
+  }
+
+  .person-info{
+    font-size: 15px;
+  }
   .top-logo {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-block: 15px;
+    padding-block-start: 15px;
     padding-inline: 15px;
+    padding-block-end: 25px;
 }
 
 .sponsor{
