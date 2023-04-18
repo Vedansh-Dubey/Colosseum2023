@@ -72,7 +72,7 @@ const EventCards = () => {
 
 
   const styles3 = {
-    paddingBlockStart: '65px'
+    paddingBlockStart: '100px'
   };
 
   return (
