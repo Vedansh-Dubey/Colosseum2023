@@ -64,7 +64,7 @@ function Homepage() {
       <div className="box">
         <h1 className="homepage-heading">Colosseum 13.0</h1>
       </div>
-      <div className="countdown-container">
+      {/* <div className="countdown-container">
         <div>
           <p ref={daysRef} className="big-text">
             0
@@ -89,7 +89,7 @@ function Homepage() {
           </p>
           <span>Sec</span>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
